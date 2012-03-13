@@ -19,5 +19,11 @@ describe Spree::Product do
       product.update_attributes(:price => "9,99")
       product.price.should == 9.99
     end
+
+    it "can assign the cost_price attribute" do
+      product = Spree::Product.new
+      product.cost_price = "9,99"
+      product.cost_price.to_f.should == 9.99
+    end
   end
 end
