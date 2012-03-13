@@ -5,7 +5,9 @@ Spree::Variant.class_eval do
     self.old_price = SpreeLocalize.normalize_number(value)
   end
 
-  def cost_price=(value)
-    write_attribute(:cost_price, SpreeLocalize.normalize_number(value))
+  [:cost_price, :weight, :height, :width, :depth].each do |attribute|
+    define_method("#{attribute}=") do |value|
+      write_attribute(attribute, SpreeLocalize.normalize_number(value))
+    end
   end
 end
