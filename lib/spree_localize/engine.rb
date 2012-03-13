@@ -1,6 +1,6 @@
-module SpreeGlobalize
+module SpreeLocalize
   class Engine < Rails::Engine
-    engine_name 'spree_globalize'
+    engine_name 'spree_localize'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

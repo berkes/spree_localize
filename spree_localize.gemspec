@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_globalize'
+  s.name        = 'spree_localize'
   s.version     = '1.0.0'
   s.summary     = 'Adds internationalization support to Spree'
   s.description = 'Adds internationalization support to Spree'
